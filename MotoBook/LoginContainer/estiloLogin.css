@@ -1,0 +1,98 @@
+:root{
+	--primary-color: rgba(0,255,45);
+	--secondary-color: #0000FF;
+}
+
+body
+{
+	background: grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.caixaLogin
+{
+	background: white;
+	text-align: center;
+	padding: 3rem 0rem 0rem;
+	border-radius: 20px;
+	height: 15rem;
+}
+
+.logo img
+{
+	width: 6rem;
+	position: absolute;
+	transform: translateY(-6rem) translateX(8rem);
+}
+
+.listaTxt
+{
+	list-style: none;
+	padding: 0;
+}
+
+.txtLogin
+{
+	margin: auto;
+	display: inline-block;
+	width: 20rem;
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	border: none;
+	border-bottom: 1px solid var(--primary-color);
+	background: transparent;
+	outline: none;
+	position: relative;
+	padding-left: 2rem;
+}
+
+.formLogin
+{
+	
+}
+
+.txtIcon
+{
+	position: absolute;
+	font-size: 1.6rem;
+	transform: translateY(1rem);
+	color: var(--primary-color);
+}
+
+.btnAcessar
+{
+	display: block;
+	width: 10rem;
+	margin: 1rem auto;
+	border: 0.3rem solid grey;
+	background: white;
+	padding: 0.5rem 1rem;
+	position: relative;
+	transform: translateY(1rem);
+	border-radius: 0.5rem;
+	transition: 0.3s;
+}
+
+.btnAcessar:hover
+{
+	background: var(--primary-color);
+	color: black;
+}
+
+.link
+{
+	text-decoration: none;
+}
+
+.listaAcesso
+{
+	list-style: none;
+	color: white;
+	font-size: 1.3rem;
+	padding: 0;
+	margin-top: 1rem;
+}

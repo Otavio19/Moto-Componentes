@@ -1,0 +1,160 @@
+:root{
+	--cinza-escuro: #3e484f;
+	--verde:  #5CE68F;
+	--cinza: #ebebeb;
+	--cinza-claro: #f1ecec;
+	--cimento: #35566B;
+	--verde-agua: #3AAB9C;
+}
+
+body
+{
+	background: var(--cinza);
+}
+
+section{
+	width: 100%;
+	height: 100vh;
+}
+
+nav{
+	position: fixed;
+	width: 100%;
+	background: var(--verde);
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
+	text-align: right;
+	padding: 1rem 2.1rem 1rem;
+	z-index: 1;
+}
+
+.listaMenu{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.listaItem{
+	display: inline-block;
+	font-size: 1.2rem;
+	margin-left: 1rem;
+	cursor: pointer;
+}
+
+.listaItem a
+{
+	text-decoration: none;
+	color: #3e484f;
+}
+
+.listaItem a:hover
+{
+	color: white;
+}
+
+#home
+{
+	display: flex;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+.infoHome{
+	height: 100vh;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.info
+{
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
+	color: var(--cinza-escuro);
+	padding: 2rem;
+	background: white;
+	border-radius: 2rem;
+	cursor: default;
+}
+
+.logo
+{
+	right: 0;
+	height: 100vh;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#sobre, #missao, #contato
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+section img{
+	width: 25rem;
+}
+
+.content
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
+	margin: auto;
+}
+
+.content .text
+{
+	width: 40%;
+	font-size: 1.1rem;
+}
+
+.text h1{
+	margin-bottom: 2rem;
+}
+
+.biblia
+{
+	font-weight: 600;
+}
+
+.formContato
+{
+	height: 60%;
+	border: 1px solid red;
+}
+
+#spnNome
+{
+	display: block;
+	position: relative;
+}
+
+#spnNome:nth-child(2n){
+	top: 4rem;
+}
+
+.inptForm, .lblForm
+{
+	position: absolute;
+}
+
+.lblForm
+{
+	padding: 0.1rem 0.2rem;
+	opacity: 0;
+}
+
+.inptForm:focus  ~ .lblForm{
+	top: -2rem;
+	opacity: 1;
+	
+	transition: all 0.5s ease-in-out;
+}
